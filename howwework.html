@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How We Work</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #333;
+      color: white;
+    }
+
+    section.steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .step-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    .step-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .step-card h3 {
+      margin-bottom: 1rem;
+      color: #007acc;
+    }
+
+    .step-card p {
+      font-size: 0.95rem;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .cta button {
+      background: #007acc;
+      border: none;
+      padding: 1rem 2rem;
+      color: white;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .cta button:hover {
+      background: #005e99;
+    }
+
+    @media (max-width: 768px) {
+      .steps {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>How We Work</h1>
+    <p>Our process is simple, efficient, and transparent.</p>
+  </header>
+
+  <section class="steps">
+    <div class="step-card">
+      <h3>1. Discovery</h3>
+      <p>We listen and gather information to understand your goals and needs.</p>
+    </div>
+    <div class="step-card">
+      <h3>2. Planning</h3>
+      <p>We create a custom strategy to reach your objectives within budget and timeline.</p>
+    </div>
+    <div class="step-card">
+      <h3>3. Execution</h3>
+      <p>We bring the plan to life with precise implementation and regular updates.</p>
+    </div>
+    <div class="step-card">
+      <h3>4. Delivery</h3>
+      <p>We review, refine, and deliver the final product to your satisfaction.</p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <button onclick="contactUs()">Let’s Get Started</button>
+  </div>
+
+  <script>
+    function contactUs() {
+      //alert('Thanks for your interest! Redirecting to contact page...');
+      window.location.href = 'account.html'; // Change to your real contact page
+    }
+  </script>
+
+</body>
+</html>

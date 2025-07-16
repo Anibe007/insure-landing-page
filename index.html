@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Frontend Mentor | Insure landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container nav-container">
+      <div class="flex" style="margin-top: 0;">
+        <div class="img-wrapper">
+          <img src="images/logo.svg" alt="logo">
+        </div>
+        <button class="hamburger" id="hamburger">
+          <img src="images/icon-hamburger.svg" class="open" alt="icon-hamburger">
+          <img src="images/icon-close.svg" class="close" alt="ico-close">
+        </button>
+        <ul id="menu">
+          <li><a href="./howwework.html">HOW WE WORK</a></li>
+          <li><a href="./blog.html">BLOG</a></li>
+          <li><a href="./account.html">ACCOUNT</a></li>
+          <li><a href="./viewplans.html" class="view-plans">VIEW PLANS</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div>
+     <div class="right-image-container">
+      <img class="right" src="images/bg-pattern-intro-right-desktop.svg">
+     </div>
+    </div>
+    <div class="container Humanizing-insurance">
+      <img class="left" src="images/bg-pattern-intro-left-desktop.svg">
+      <div class="flex align-start reverse-mobile">
+        <div class="human">
+          <h1 class="line-top1">Humanizing<br> your insurance.</h1>
+          <p>
+            <br>
+            Get your life insurance coverage easier and faster. We blend our expertise 
+            <br>and technology to help you find the plan that’s right for you. Ensure you 
+            <br>and your loved ones are protected.
+          </p>
+          <button class="btn">VIEW PLANS</button>
+        </div>
+        <div>
+          <img class="intro-image" src="images/image-intro-desktop.jpg" alt="intro">
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="container">
+    <h2 class="line-top line-violet">We're different</h2>
+    <div class="flex">
+      <div class="tile">
+        <img src="images/icon-snappy-process.svg" alt="Snappy">
+        <h3>Snappy Process</h3>
+        <p>
+          Our application process can be completed in minutes, not hours. Don’t get 
+          stuck filling in tedious forms.
+        </p>        
+      </div>
+      <div class="tile">
+        <img src="images/icon-affordable-prices.svg" alt="Affordable">
+        <h3>Affordable Prices</h3>
+        <p>
+          We don’t want you worrying about high monthly costs. Our prices may be low, 
+          but we still offer the best coverage possible.
+        </p>        
+      </div>
+      <div class="tile">`
+        <img src="images/icon-people-first.svg" alt="People">
+        <h3>People First</h3>
+        <p>
+          Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+          sure you’re covered when you need it.
+        </p>        
+      </div>
+    </div>
+  </section>
+  <section class="container bg-violet">
+    <div class="flex2">
+      <div>
+        <h2>Find out more about how we work</h2>
+      </div>
+      <button class="btn">How we work</button>
+    </div>
+  </section>
+  <footer class="">
+    <div class="container">
+      <div class="flex border-bottom">
+        <div>
+          <img src="images/logo.svg" class="logo1" alt="logo">
+        </div>
+        <div>
+          <ul class="flex1">
+            <li><a href="#" class="flex1"><img src="images/icon-facebook.svg" alt="facebook"></a></li>
+            <li><a href="#" class="flex1"><img src="images/icon-twitter.svg" alt="twitter"></a></li>
+            <li><a href="#" class="flex1"><img src="images/icon-pinterest.svg" alt="pinterest"></a></li>
+            <li><a href="#" class="flex1"><img src="images/icon-instagram.svg" alt="instagram"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex align-start">
+        <div>
+          <h4>OUR COMPANY</h4>
+          <ul>
+            <li><a href="#">HOW WE WORK</a></li>
+            <li><a href="#">WHY INSURE?</a></li>
+            <li><a href="#">VIEW PLANS</a></li>
+            <li><a href="#">REVIEWS</a></li>
+          </ul>
+        </div>
+        <div>
+          <div>
+            <h4>HELP ME</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+            <li><a href="#">TERMS OF USE</a></li>
+            <li><a href="#">PRIVACY POLICY</a></li>
+            <li><a href="#">COOKIES</a></li>
+          </ul>
+          </div>
+        </div>
+        <div>
+          <h4>CONTACT</h4>
+          <ul>
+            <li><a href="#">SALES</a></li>
+            <li><a href="#">SUPPORT</a></li>
+            <li><a href="#">LIVE CHAT</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>OTHERS</h4>
+          <ul>
+            <li><a href="#">CAREERS</a></li>
+            <li><a href="#">PRESS</a></li>
+            <li><a href="#">LICENCES</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">David Anibe Daniel</a>.
+  </div>
+
+  <script type="text/javascript">
+    // script.js
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("menu");
+  const openIcon = hamburger.querySelector(".open");
+  const closeIcon = hamburger.querySelector(".close");
+
+  // Set initial state
+  // closeIcon.style.display = "none";
+  // menu.style.display = "none";
+
+  // Toggle menu visibility
+  hamburger.addEventListener("click", () => {
+    const isOpen = menu.style.display === "block";
+
+    if (isOpen) {
+      menu.style.display = "none";
+      openIcon.style.display = "inline";
+      closeIcon.style.display = "none";
+    } else {
+      menu.style.display = "block";
+      openIcon.style.display = "none";
+      closeIcon.style.display = "inline";
+    }
+  });
+
+  // Add interaction to 'VIEW PLANS' buttons
+  document.querySelectorAll(".btn, .view-plans").forEach(button => {
+    button.addEventListener("click", () => {
+      // alert("View Plans clicked! 🚀");
+      // You can add scroll or link logic here
+    });
+  });
+});
+
+  </script>
+
+</body>
+</html>
+  
