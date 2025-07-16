@@ -51,7 +51,7 @@
             <br>and technology to help you find the plan that’s right for you. Ensure you 
             <br>and your loved ones are protected.
           </p>
-          <button class="btn">VIEW PLANS</button>
+          <a  class="btn" href="./viewplans.html">VIEW PLANS</a>
         </div>
         <div>
           <img class="intro-image" src="images/image-intro-desktop.jpg" alt="intro">
@@ -93,7 +93,7 @@
       <div>
         <h2>Find out more about how we work</h2>
       </div>
-      <button class="btn">How we work</button>
+      <a class="btn" href="./howwework.html">How we work</a>
     </div>
   </section>
   <footer class="">
@@ -104,10 +104,10 @@
         </div>
         <div>
           <ul class="flex1">
-            <li><a href="#" class="flex1"><img src="images/icon-facebook.svg" alt="facebook"></a></li>
-            <li><a href="#" class="flex1"><img src="images/icon-twitter.svg" alt="twitter"></a></li>
-            <li><a href="#" class="flex1"><img src="images/icon-pinterest.svg" alt="pinterest"></a></li>
-            <li><a href="#" class="flex1"><img src="images/icon-instagram.svg" alt="instagram"></a></li>
+            <li><a href="./blog.html" class="flex1"><img src="images/icon-facebook.svg" alt="facebook"></a></li>
+            <li><a href="./blog.html" class="flex1"><img src="images/icon-twitter.svg" alt="twitter"></a></li>
+            <li><a href="./blog.html" class="flex1"><img src="images/icon-pinterest.svg" alt="pinterest"></a></li>
+            <li><a href="./blog.html" class="flex1"><img src="images/icon-instagram.svg" alt="instagram"></a></li>
           </ul>
         </div>
       </div>
@@ -115,37 +115,37 @@
         <div>
           <h4>OUR COMPANY</h4>
           <ul>
-            <li><a href="#">HOW WE WORK</a></li>
-            <li><a href="#">WHY INSURE?</a></li>
-            <li><a href="#">VIEW PLANS</a></li>
-            <li><a href="#">REVIEWS</a></li>
+            <li><a href="./howwework.html">HOW WE WORK</a></li>
+            <li><a href="./blog.html">WHY INSURE?</a></li>
+            <li><a href="./viewplans.html">VIEW PLANS</a></li>
+            <li><a href="./blog.html">REVIEWS</a></li>
           </ul>
         </div>
         <div>
           <div>
             <h4>HELP ME</h4>
             <ul>
-              <li><a href="#">FAQ</a></li>
-            <li><a href="#">TERMS OF USE</a></li>
-            <li><a href="#">PRIVACY POLICY</a></li>
-            <li><a href="#">COOKIES</a></li>
+              <li><a href="./blog.html">FAQ</a></li>
+            <li><a href="./viewplans.html">TERMS OF USE</a></li>
+            <li><a href="./account.html">PRIVACY POLICY</a></li>
+            <li><a href="./blog.html">COOKIES</a></li>
           </ul>
           </div>
         </div>
         <div>
           <h4>CONTACT</h4>
           <ul>
-            <li><a href="#">SALES</a></li>
-            <li><a href="#">SUPPORT</a></li>
-            <li><a href="#">LIVE CHAT</a></li>
+            <li><a href="./account.html">SALES</a></li>
+            <li><a href="./howwework.html">SUPPORT</a></li>
+            <li><a href="./account.html">LIVE CHAT</a></li>
           </ul>
         </div>
         <div>
           <h4>OTHERS</h4>
           <ul>
-            <li><a href="#">CAREERS</a></li>
-            <li><a href="#">PRESS</a></li>
-            <li><a href="#">LICENCES</a></li>
+            <li><a href="./blog.html">CAREERS</a></li>
+            <li><a href="./howwework.html">PRESS</a></li>
+            <li><a href="./account.html">LICENCES</a></li>
           </ul>
         </div>
       </div>
@@ -157,44 +157,7 @@
     Coded by <a href="#">David Anibe Daniel</a>.
   </div>
 
-  <script type="text/javascript">
-    // script.js
-
-document.addEventListener("DOMContentLoaded", () => {
-  const hamburger = document.getElementById("hamburger");
-  const menu = document.getElementById("menu");
-  const openIcon = hamburger.querySelector(".open");
-  const closeIcon = hamburger.querySelector(".close");
-
-  // Set initial state
-  // closeIcon.style.display = "none";
-  // menu.style.display = "none";
-
-  // Toggle menu visibility
-  hamburger.addEventListener("click", () => {
-    const isOpen = menu.style.display === "block";
-
-    if (isOpen) {
-      menu.style.display = "none";
-      openIcon.style.display = "inline";
-      closeIcon.style.display = "none";
-    } else {
-      menu.style.display = "block";
-      openIcon.style.display = "none";
-      closeIcon.style.display = "inline";
-    }
-  });
-
-  // Add interaction to 'VIEW PLANS' buttons
-  document.querySelectorAll(".btn, .view-plans").forEach(button => {
-    button.addEventListener("click", () => {
-      // alert("View Plans clicked! 🚀");
-      // You can add scroll or link logic here
-    });
-  });
-});
-
-  </script>
+  <script type="text/javascript" src="./insure.js"></script>
 
 </body>
 </html>
