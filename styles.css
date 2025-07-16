@@ -4,8 +4,7 @@
 *{
 	padding: 0;
 	margin: 0;
-	box-sizing: border
-	-box;
+	box-sizing: border-box;
 	font: inherit;
 	font-family: 'karla', serif;
 }
@@ -68,7 +67,7 @@ nav{
 	top: 0;
 	left: 0;
 	width: 100vw;
-	z-index: 99999;
+	z-index: 999;
 }
 
 nav .hamburger{
@@ -163,6 +162,7 @@ header *{
 	padding: 15px 25px;
 	letter-spacing: 2px;
 	margin-top: 30px;
+	text-decoration: none;
 }
 
 .view-plans{
@@ -363,7 +363,7 @@ footer li a{
 		background-color: transparent;
 		border: 0;
 		cursor: pointer;
-		display: flex;
+		display: block;
 	}
 
 	nav .hamburger .close{
@@ -371,7 +371,7 @@ footer li a{
 	}
 
 	nav .hamburger .opo .open{
-		display: block;
+		display: none;
 	}
 
 	nav .flex{
@@ -383,7 +383,28 @@ footer li a{
 	}
 
 	nav ul{
+		position: absolute;
+		z-index: 999999;
+		height: calc(100vh - 100px);
+		width: 100vw;
+		top: 100px;
+		left: 0;
+		background-color: black;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	#menu {
 		display: none;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.view-plans {
+		color: white;
+		border-color: none;
 	}
 
 	nav ul li{
@@ -398,6 +419,10 @@ footer li a{
 		padding-top: 0;
 		margin-bottom: 50px;
 		height: 100%;
+	}
+
+	.view-plans {
+		
 	}
 
 	.right{
